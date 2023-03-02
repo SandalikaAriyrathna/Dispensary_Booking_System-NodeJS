@@ -29,8 +29,8 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <a className="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="https://www.pngitem.com/pimgs/m/18-184981_dispensary-logo-png-transparent-png.png"
-                height="40"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOy94i90TeoCpIN1SG07KKy4bzkZn0-C972prl94ihDQCk8tQKUShXdHmhT66d3dMAEs&usqp=CAU"
+                height="100"
                 alt="logo"
                 loading="lazy"
               />
@@ -47,6 +47,7 @@ export default function Header() {
                   Bookings
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to={'/'} className="nav-link">
                   Services

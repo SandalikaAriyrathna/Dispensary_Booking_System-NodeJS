@@ -5,19 +5,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function UserProfile() {
-  const PF = 'http://localhost:5000/api/profile_pic/';
-
-  const config = {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem('access_token')}`,
-    },
-  };
+  const PF = 'http://localhost:5000/profile_pic/';
 
   const [first_name, setFirstName] = useState('');
   const [last_name, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [mobile_number, setMobile] = useState('');
-  const [profile_pic, setProfile] = useState('');
+  const [profile_pic, setProfile] = useState(' ');
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
@@ -34,11 +28,15 @@ export default function UserProfile() {
       <div className="container d-flex justify-content-center">
         <div className="card-user p-3 py-4">
           <div className="text-center">
+            <h3 className="text-dark mt-2">User Profile</h3>
+            <br />
             <img
               src={PF + profile_pic}
               width="200"
               className="rounded-circle"
+              alt="profile"
             />
+            <br />
             <br />
             <h5 className="text-dark mt-2">
               {first_name} {last_name}

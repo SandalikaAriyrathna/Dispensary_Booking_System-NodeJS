@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const multer = require('multer');
 const path = require('path');
 const jwt = require('jsonwebtoken');
+var port = 3000;
 
 const UserAuthRoute = require('../routes/UserAuth');
 
@@ -20,6 +21,8 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
+console.log(path.join(__dirname, 'profile_pic'));
+app.use('/profile_pic', express.static(path.join(__dirname, '../profile_pic')));
 
 dotenv.config();
 
@@ -52,14 +55,6 @@ app.put('/api/update', update.single('file'), (req, res) => {
 });
 
 app.use('/api/UserAuth', UserAuthRoute);
-// app.use('/profile_pic', express.static(path.join(__dirname, '/profile_pic')));
-
-/*
-app.use('/a',express.static('/b'));
-Above line would serve all files/folders inside of the 'b' directory
-And make them accessible through http://localhost:3000/a.
-*/
-app.use(express.static(__dirname + 'api/profile_pic'));
 
 app.listen('5000', () => {
   console.log('Backend is running.');

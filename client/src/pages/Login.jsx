@@ -30,17 +30,22 @@ export default function Login() {
         <div className="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
           <div className="row gx-lg-5 align-items-center mb-5">
             <div className="col-lg-6 mb-5 mb-lg-0" style={{ zIndex: '10' }}>
+              <div className="ms-8">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOy94i90TeoCpIN1SG07KKy4bzkZn0-C972prl94ihDQCk8tQKUShXdHmhT66d3dMAEs&usqp=CAU"
+                  height="250"
+                  alt="logo"
+                  loading="lazy"
+                />
+              </div>
               <h1
-                className="my-5 display-5 fw-bold ls-tight"
-                style={{ color: 'hsl(218, 81%, 95%)' }}
+                className="my-2 display-5 fw-bold ls-tight"
+                style={{ color: 'blue' }}
               >
                 Green House <br />
                 <span style={{ color: 'hsl(218, 81%, 75%)' }}>Dispensary</span>
               </h1>
-              <p
-                className="mb-4 opacity-70"
-                style={{ color: 'hsl(218, 81%, 85%)' }}
-              >
+              <p className="mb-4 opacity-70" style={{ color: 'black' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley

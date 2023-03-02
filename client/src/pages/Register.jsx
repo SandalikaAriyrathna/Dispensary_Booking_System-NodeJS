@@ -85,16 +85,16 @@ export default function SignUp(props) {
           }}
         ></div>
 
-        <div className="row d-flex justify-content-center">
+        <div className="row d-flex justify-content-center ">
           <div
-            class="col-md-6 card mx-4 mx-md-5 shadow-5-strong"
+            class="col-md-6 card mx-4 mx-md-5 shadow-5-strong mb-5"
             style={{
               marginTop: '-100px',
               background: ' hsla(0, 0%, 100%, 0.8)',
               backdropFilter: 'blur(30px)',
             }}
           >
-            <div class="card-body py-5 px-md-5">
+            <div class="card-body py-5 px-md-5 ">
               <div class="row d-flex justify-content-center">
                 <h2 class="fw-bold mb-5 text-center">Create Your Account</h2>
 
