@@ -190,7 +190,7 @@ export default function Footer() {
       >
         © 2020 Copyright:
         <a className="text-dark" href="https://gorent.com/">
-          GoRent.com
+          myweather.com
         </a>
       </div>
     </MDBFooter>
