@@ -1,27 +1,23 @@
 import React from 'react';
-// import Footer from '../components/Footer';
-// import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
-import { Link } from 'react-router-dom';
 import '../App.css';
 
 export default function Home() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <div
-        className="hpimage"
+        class="p-5 bg-image"
         style={{
-          backgroundImage: '',
-          backgroundRepeat: 'no-repeat',
-          WebkitBackgroundSize: 'cover',
-          backgroundSize: 'cover',
+          backgroundImage:
+            "url('https://thumbs.dreamstime.com/b/medical-coverage-insurance-concept-hands-doctor-covering-symbols-icons-blue-background-copy-space-web-banner-template-152592412.jpg')",
+          height: '800px',
         }}
-      >
-        <h1>123</h1>
-      </div>
+      ></div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
