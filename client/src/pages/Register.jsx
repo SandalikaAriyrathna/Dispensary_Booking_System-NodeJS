@@ -119,7 +119,7 @@ export default function SignUp(props) {
 
                   <Form.Group as={Row} className="mb-3">
                     <Form.Label column sm="3">
-                      Select Cloth Image
+                      Select Profile Picture
                     </Form.Label>
                     <Col sm="7">
                       <Form.Control
